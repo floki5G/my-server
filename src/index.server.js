@@ -30,7 +30,7 @@ app.use("/api",postrouter)
 
 
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.API, () => {
   console.log(`SERVER IS RUNNING ${process.env.PORT}`)
 })
 
