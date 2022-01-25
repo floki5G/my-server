@@ -8,7 +8,7 @@ const postrouter = express.Router();
 // router.post('/signin', signin)
 
 postrouter.post('/post',requireSignin,userMiddleware,post)
-postrouter.post('/post/get',requireSignin,userMiddleware,getallpost)
+postrouter.post('/post/get',getallpost)
 
 postrouter.post('/post/update',requireSignin,userMiddleware,updatepost)
 postrouter.post('/post/delete',requireSignin,userMiddleware,deletepost)
